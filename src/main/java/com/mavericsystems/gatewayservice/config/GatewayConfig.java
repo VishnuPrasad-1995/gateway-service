@@ -14,7 +14,7 @@ public class GatewayConfig {
                         .uri("http://localhost:3005/"))
                 .route("post-service", rt -> rt.path("/posts/**")
                         .uri("http://localhost:3010/"))
-                .route("comment-service", rt -> rt.path("/posts/**")
+                .route("comment-service", rt -> rt.path("/comment/**")
                         .uri("http://localhost:3015/"))
                 .route("like-service", rt -> rt.path("/postsOrComments/**")
                         .uri("http://localhost:3020/"))
